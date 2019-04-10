@@ -3,3 +3,5 @@ venv
 .idea/vcs.xml
 *.pycs
 ./idea/*
+.xml
+.iml
