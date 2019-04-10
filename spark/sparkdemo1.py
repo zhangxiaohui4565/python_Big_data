@@ -21,7 +21,7 @@ wc = c.map(lambda w :(w,1)).reduceByKey(lambda a,b :a+b)
 
 #take获取数据 take(1)  == first
 for line in wc.take(int(wc.count())):
-    print line
+    print (line)
 
 wc.saveAsHadoopFile(path="hdfs://ubuntu:9000/test/out",outputFormatClass="org.apache.hadoop.mapred.TextOutputFormat",conf={'mapreduce.output.textoutputformat.separator':','})
 sc.stop()
